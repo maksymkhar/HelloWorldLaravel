@@ -38,7 +38,7 @@
     <body>
         <div class="container">
             <div class="content">
-                <div class="title">Hola hola caracola!</div>
+                <div class="title">Hola hola caracola hermosa!</div>
             </div>
         </div>
     </body>

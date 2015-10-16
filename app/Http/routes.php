@@ -35,4 +35,10 @@ Route::get('/helloworld2', function () {
 
 });*/
 
-Route::get('/helloworld','HolaMonController@hello');
+Route::get('/', function () {
+    return view('welcome');
+});
+Route::get('/helloworld',"HolaMonController@hello");
+
+Route::resource('/user', "UserController");
+
