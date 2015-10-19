@@ -78,3 +78,9 @@ Route::get('prova5', function () {
     $jsonData = ['valueA' => 'value1', 'valueB' => 'value3'];
     return response()->json($jsonData);
 });
+
+Route::get('prova6', function () {
+
+    $jsonData = ['valueA' => 'value1', 'valueB' => 'value3'];
+    return redirect('http://www.google.es');
+});
