@@ -52,5 +52,16 @@ Route::get('prova2', function () {
     $content = '<h1>Hello World</h1>';
     $status = 200;
     $contentType = 'text/html';
-    return (new Response($content, $status))->header('Content-Type', $contentType);
+    return (new Response($content, $status))
+        ->header('Content-Type', $contentType);
+});
+
+Route::get('prova3', function () {
+
+    $content = '<h1>Hello World</h1>';
+    $status = 200;
+    $contentType = 'text/plain';
+    return (new Response($content, $status))
+        ->header('Content-Type', $contentType)
+        ->header('MyHeader', 'HOLA!!');
 });
