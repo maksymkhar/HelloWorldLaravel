@@ -65,3 +65,10 @@ Route::get('prova3', function () {
         ->header('Content-Type', $contentType)
         ->header('MyHeader', 'HOLA!!');
 });
+
+Route::get('prova4', function () {
+
+    $pathToFile = public_path('prova.pdf');
+    // dd($pathToFile); <- Util per a depurar, atura i imprimeix.
+    return response()->download($pathToFile);
+});
