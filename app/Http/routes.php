@@ -72,3 +72,9 @@ Route::get('prova4', function () {
     // dd($pathToFile); <- Util per a depurar, atura i imprimeix.
     return response()->download($pathToFile);
 });
+
+Route::get('prova5', function () {
+
+    $jsonData = ['valueA' => 'value1', 'valueB' => 'value3'];
+    return response()->json($jsonData);
+});
