@@ -47,7 +47,7 @@ Route::get('/prova1', function () {
     return '<h1>Hello World</h1>';
 });
 
-Route::get('prova2', function () {
+Route::get('/prova2', function () {
 
     $content = '<h1>Hello World</h1>';
     $status = 200;
@@ -56,7 +56,7 @@ Route::get('prova2', function () {
         ->header('Content-Type', $contentType);
 });
 
-Route::get('prova3', function () {
+Route::get('/prova3', function () {
 
     $content = '<h1>Hello World</h1>';
     $status = 200;
@@ -66,21 +66,20 @@ Route::get('prova3', function () {
         ->header('MyHeader', 'HOLA!!');
 });
 
-Route::get('prova4', function () {
+Route::get('/prova4', function () {
 
     $pathToFile = public_path('prova.pdf');
     // dd($pathToFile); <- Util per a depurar, atura i imprimeix.
     return response()->download($pathToFile);
 });
 
-Route::get('prova5', function () {
+Route::get('/prova5', function () {
 
     $jsonData = ['valueA' => 'value1', 'valueB' => 'value3'];
     return response()->json($jsonData);
 });
 
-Route::get('prova6', function () {
+Route::get('/prova6', function () {
 
-    $jsonData = ['valueA' => 'value1', 'valueB' => 'value3'];
     return redirect('http://www.google.es');
 });
