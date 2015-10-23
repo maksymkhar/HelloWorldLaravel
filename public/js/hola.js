@@ -4,10 +4,31 @@
 
 function hello()
 {
-    alert("HOLA HOLA!!");
+    console.log("HOLA!");
 }
 
 function bye()
 {
+    console.log("ADEU!");}
+
+function helloButton()
+{
+    alert("HOLA HOLA!!");
+}
+
+function byeButton()
+{
     alert("ADIÓS!");
 }
+
+
+
+$(function () {
+
+    $('#sayhello').click( function() {
+
+            $('#helloworld').show();
+        }
+    );
+});
+
